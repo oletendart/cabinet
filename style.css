@@ -19,7 +19,7 @@
 .My-Color-Theme-4-hsla { color: hsla(190, 5, 39, 1); }
 .My-Color-Theme-5-hsla { color: hsla(190, 34, 57, 1); }
 
-html {
+html,body {
     margin:0;
     padding: 0;
 }
@@ -29,8 +29,6 @@ body {
 }
 main {
     background-color: #D6EAEE;
-    margin: 0;
-    padding: auto;
    width: 50rem;
    display: flex;
   align-items: center;
@@ -41,13 +39,14 @@ main {
 
 .navtop {
     background-color:#8DDBEB;
-    color: #40646B;   
+    color: #40646B;  
+    border: solid 2px #8DDBEB;
 }
 
 .listindication {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    margin: 0;
+ 
     
 }
