@@ -19,34 +19,87 @@
 .My-Color-Theme-4-hsla { color: hsla(190, 5, 39, 1); }
 .My-Color-Theme-5-hsla { color: hsla(190, 34, 57, 1); }
 
-html,body {
-    margin:0;
+html {
+    font-size: 10px;
+}
+html, body {
+    margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #40646B;   
+    background-color: #40646B;  
+    
 }
+.content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(10rem, auto);
+    
+   
+    
+}
+header {
+    grid-column: 1 / 13;
+    width: 100%;
+    background-color: #6EABB8;
+
+
+}  
 main {
+    grid-column:  3 / 10;
     background-color: #D6EAEE;
-   width: 50rem;
-   display: flex;
-  align-items: center;
-  flex-direction: column;
+    width: 85rem;
   
+}
+footer {
+    grid-column: 1 / 13;
    
 }
-
-.navtop {
-    background-color:#8DDBEB;
-    color: #40646B;  
-    border: solid 2px #8DDBEB;
-}
-
-.listindication {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
- 
+aside {
+    grid-column: 12 / 13;
     
+}
+.bannermedical {
+    width: 40rem;
+    height: auto;
+}
+.picturelogo {
+    width: 20rem;
+    height: auto;
+}
+.navtop {
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    grid-template-rows: minmax(0.5rem, 6rem);
+    grid-template-areas: "accueil contact medecins horaires urgence propos";
+    justify-items: center;
+    list-style-type: none;
+    color: #40646B;
+    font-size: 1.6rem;
+    align-items: center;
+
+}
+.accueil {
+    grid-area: accueil;
+}
+.contact {
+    grid-area: contact;
+}
+.medecins {
+    grid-area: medecins;
+}
+.horaires {
+    grid-area: horaires;
+}
+.urgence {
+    grid-area: urgence;
+}
+.propos {
+    grid-area: propos;
+}
+footer {
+    grid-column: 4 / 10;
+    background-color: #D6EAEE;
+    width: 50rem;
 }
