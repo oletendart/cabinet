@@ -58,6 +58,7 @@ footer {
 }
 aside {
     grid-column: 12 / 13;
+    align-self: center;
     
 }
 .bannermedical {
@@ -99,7 +100,29 @@ aside {
     grid-area: propos;
 }
 footer {
-    grid-column: 4 / 10;
+    grid-column: 3 / 10;
     background-color: #D6EAEE;
-    width: 50rem;
+    width: 85rem;
+}
+/*  source : https://www.w3schools.com/howto/howto_css_arrows.asp */
+.arrowtop {
+    border: solid #D6EAEE;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2rem;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    width: 2rem;
+    height: 2rem;  
+
+}
+.arrowbottom {
+    border: solid #D6EAEE;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2rem;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 2rem;
+    height: 2rem;
 }
