@@ -278,3 +278,46 @@ form {
 .areaform {
     resize: none;
 }
+/* 
+    File Medecins.html 
+*/
+/* 
+    Text 
+*/
+.nosmedecins {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #40646B;
+    font-style: italic;
+}
+.nomprenom {
+    color: #40646B;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.shortpresentation {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #40646B;
+}
+a {
+    font-size: 1.5rem;
+}
+/*
+    Pictures
+*/
+.rossignolpicture {
+    text-align: center;
+}
+.picturerossignol {
+    height: 20rem;
+    width: auto;
+}
+.genereuxpicture {
+    text-align: center;
+}
+.picturegenereux {
+    height: 20rem;
+    width: auto;
+}
