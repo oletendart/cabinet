@@ -21,11 +21,10 @@
 /* 
      HTML Basics
 */
+
 html {
     font-size: 10px;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap');
 
 html, body {
     margin: 0;
@@ -36,17 +35,21 @@ body {
     background-color: #40646B;  
     
 }
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+
 /* 
     Content grid basic
 */
+
 .content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: minmax(10rem, auto);  
+    grid-auto-rows: minmax(1rem, auto);  
 }
 /*
-    Main parts
+    Main parts of the page
 */
+
 header {
     grid-column: 1 / 13;
     width: 100%;
@@ -54,9 +57,9 @@ header {
 
 }  
 main {
-    grid-column:  3 / 10;
+    grid-column:  3 / 11;
     background-color: #D6EAEE;
-    width: 85rem;
+    width: 100%;
   
 }
 footer {
@@ -71,20 +74,11 @@ aside {
     
 }
 /*
-    Pictures
-*/
-.bannermedical {
-    width: 40rem;
-    height: auto;
-   
-}
-.picturelogo {
-    width: 20rem;
-    height: auto;
-}
-/*
     Navigation Bar Top
 */
+a:link {
+    text-decoration: none;
+}
 .navtop {
     display: grid;
     grid-template-columns: repeat(6, 2fr);
@@ -95,10 +89,12 @@ aside {
     color: #40646B;
     font-size: 1.6rem;
     align-items: center;
-
 }
 .accueil {
     grid-area: accueil;
+}
+.accueil:hover {
+    color: red;
 }
 .contact {
     grid-area: contact;
@@ -119,6 +115,7 @@ aside {
     Arrow top and bot
  source : https://www.w3schools.com/howto/howto_css_arrows.asp 
  */
+
 .arrowtop {
     border: solid #D6EAEE;
     border-width: 0 3px 3px 0;
@@ -141,14 +138,58 @@ aside {
     height: 2rem;
 }
 /*
+    Pictures
+*/
+.bannermedical {
+    display: grid;
+    justify-content: center;
+    grid-area: bannermedical;
+} 
+.picturelogo {
+    display: grid;
+    justify-content: center;
+    grid-area: picturelogo;
+}
+.bannermedicalpicture {
+    display: grid;
+    width: 60rem;
+    height: 25rem;
+    align-content: center;
+}
+.picturelogomedical {
+    width: 20rem;
+    height: auto;
+}
+
+/*
     Content of the main
 */ 
+
 .nomcabinet {
-    font-family: 'Petit Formal Script', cursive;
+    display: grid;
+    font-family: 'Caveat', cursive;
+    justify-items: center;
+    font-size: 4.5rem;
+    grid-area: nomcabinet;
 }
 .line1 {
     width: 50rem;
     background-color: #40646B;
     height: 0.5rem;
- 
+    grid-area: line1;
+}
+.presentation {
+    text-align: center;
+    font-size: 1.7rem;
+}
+.line2 {
+    width: 50rem;
+    background-color: #40646B;
+    height: 0.5rem;
+    grid-area: line2;
+}
+.phoneadress {
+    text-align: center;
+    font-size: 1.5rem;
+    
 }
