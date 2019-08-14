@@ -15,7 +15,7 @@
             <ul class="navtop">
                 <a href="index.html"><li class="accueil">Accueil</li></a>
                 <a href="contact.html"><li class="contact">Contact</li></a>
-                <a href="#"><li class="medecins">Médecins</li></a>
+                <a href="medecins.html"><li class="medecins">Médecins</li></a>
                 <a href="#"><li class="horaires">Horaires</li></a>
                 <a href="#"><li class="urgence">Urgence</li></a>
                 <a href="#"><li class="propos">À propos</li></a>
@@ -27,11 +27,42 @@
     <main>      
         <h1 class="nomcabinet">Cabinet De La Vallée</h1>
 
-        <figure class="bannermedical">
-            <img src="" alt="banner medical" class="bannermedicalpicture"/>
+        <figure class="pictureplan">
+            <img src="images/plan.png" alt="picture plan the office" class="planpicture"/>
         </figure>
 
-        
+        <br>
+
+
+        <form class="fill">
+            <fieldset class="aroundline">
+                <legend>Formulaire</legend>
+                    <p>
+                        <label class="textform">Votre nom :</label> <input type="text" name="Votre nom"/>
+                    </p>
+                    <p>
+                            <label class="textform">Votre prénom :</label> <input type="text" name="Votre prénom"/>
+                    </p>
+                    <p>
+                            <label class="textform">Votre adresse mail :</label> <input type="email" name="Votre nom"/>
+                    </p>
+                    <p>
+                            <label class="textform">Votre médecin :</label> 
+                            <select name="medecin">
+                                <option value="rossignol">Docteur Rossignol</option>
+                                <option value="genereux">Docteur Généreux</option>
+                            </select>
+                    </p>
+                    <p>
+                        <label class="textform">Vos symptômes :</label>
+                        <br>
+                        <textarea name="symptomes" class="areaform" rows="5" cols="40"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Envoyer">
+                    </p>
+            </fieldset>
+        </form>
 
 
         <span class="redoval"><h5 class="emergency">Urgence</h5></span>
