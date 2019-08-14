@@ -63,9 +63,9 @@ main {
   
 }
 footer {
-    grid-column: 3 / 10;
+    grid-column: 3 / 11;
     background-color: #D6EAEE;
-    width: 85rem;
+    width: 100%;
    
 }
 aside {
@@ -79,6 +79,9 @@ aside {
 a:link {
     text-decoration: none;
 }
+a:visited {
+    color: #40646B;
+}
 .navtop {
     display: grid;
     grid-template-columns: repeat(6, 2fr);
@@ -86,7 +89,6 @@ a:link {
     grid-template-areas: "accueil contact medecins horaires urgence propos";
     justify-items: center;
     list-style-type: none;
-    color: #40646B;
     font-size: 1.6rem;
     align-items: center;
 }
@@ -99,17 +101,32 @@ a:link {
 .contact {
     grid-area: contact;
 }
+.contact:hover {
+    color: red;
+}
 .medecins {
     grid-area: medecins;
+}
+.medecins:hover {
+    color: red;
 }
 .horaires {
     grid-area: horaires;
 }
+.horaires:hover {
+    color: red;
+}
 .urgence {
     grid-area: urgence;
 }
+.urgence:hover {
+    color: red;
+}
 .propos {
     grid-area: propos;
+}
+.propos:hover {
+    color: red;
 }
 /* 
     Arrow top and bot
@@ -143,12 +160,10 @@ a:link {
 .bannermedical {
     display: grid;
     justify-content: center;
-    grid-area: bannermedical;
 } 
 .picturelogo {
     display: grid;
     justify-content: center;
-    grid-area: picturelogo;
 }
 .bannermedicalpicture {
     display: grid;
@@ -170,7 +185,7 @@ a:link {
     font-family: 'Caveat', cursive;
     justify-items: center;
     font-size: 4.5rem;
-    grid-area: nomcabinet;
+    color: #40646B;
 }
 .line1 {
     width: 50rem;
@@ -181,6 +196,8 @@ a:link {
 .presentation {
     text-align: center;
     font-size: 1.7rem;
+    font-style: italic;
+    color: #40646B;
 }
 .line2 {
     width: 50rem;
@@ -191,5 +208,44 @@ a:link {
 .phoneadress {
     text-align: center;
     font-size: 1.5rem;
+    font-style: italic;
     
+}
+/* 
+    oval forms contains emergency and contact 
+*/
+.redoval {
+    height: 10rem;
+    width: 15rem;
+    display: inline-block;
+    background-color: red;
+    border: solid 0.5rem red;
+    border-radius: 10rem / 10rem; 
+    margin: 1rem;
+}
+.emergency {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #D6EAEE; 
+}
+.blueoval {
+    height: 10rem;
+    width: 15rem;
+    display: inline-block;
+    background-color: #6EABB8;
+    border: solid 0.5rem #6EABB8;
+    border-radius: 10rem / 10rem; 
+}
+.contactbot {
+    color: #40646B;
+    font-size: 1.5rem;
+    text-align: center;
+}
+/* 
+    Credits
+*/
+.credits {
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: italic;
 }
