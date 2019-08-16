@@ -340,3 +340,33 @@ table, th, td {
     font-size: 1.5rem;
     color: #40646B;
 }
+/*
+    File Urgence.Html
+*/
+/*
+    Text
+*/
+.phoneright {
+    margin: 2rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #40646B;
+    font-style: italic;
+}
+.phoneleft {
+    margin: 2rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #40646B;
+    font-style: italic;
+}
+/*
+    Pictures
+*/
+.logophone {
+    text-align: center;
+}
+.phonelogo {
+    width: 5rem;
+    height: auto;
+}
