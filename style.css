@@ -327,4 +327,16 @@ a {
 /*
     Table 
 */
-
+.table {
+    margin: 2rem;
+    width: 60rem;
+    text-align: center;
+    border: solid 3px #40646B;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: solid 3px #40646B;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: #40646B;
+}
